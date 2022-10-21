@@ -18,10 +18,12 @@ app.mount("/static/", StaticFiles(directory="static"), name="static")
 
 app.include_router(home)
 app.include_router(about)
-app.include_router(contact)
+app.include_router(products)
 app.include_router(fashion)
 app.include_router(news)
-app.include_router(products)
+app.include_router(contact)
+
+# Others
 app.include_router(article)
 app.include_router(search)
 # app.include_router(post)
